@@ -27,7 +27,7 @@ var api = new ParseServer({
         bundleId: '',
         production: false
       }
-    }
+    },
   
   
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
