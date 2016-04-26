@@ -17,17 +17,17 @@ var api = new ParseServer({
   appId: process.env.APP_ID || 'myappid',
   masterKey: process.env.MASTER_KEY || 'mynewmasterkey', //Add your master key here. Keep it secret!
   
-      push: {
-      android: {
-        senderId: '717084254965',
-        apiKey: 'AIzaSyBzCH-N5NhqG3equXwuEXnsJfNKqreyGsM'
-      },
-      ios: {
-        pfx: '/file/path/to/XXX.p12',
-        bundleId: '',
-        production: false
-      }
-    },
+      // push: {
+      // android: {
+      //   senderId: '717084254965',
+      //   apiKey: 'AIzaSyBzCH-N5NhqG3equXwuEXnsJfNKqreyGsM'
+      // },
+      // ios: {
+      //   pfx: '/file/path/to/XXX.p12',
+      //   bundleId: '',
+      //   production: false
+      // }
+    // },
   
   
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
