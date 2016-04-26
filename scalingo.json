@@ -10,15 +10,15 @@
     },
     "APP_ID": {
       "description": "A unique identifier for your app.",
-      "value": ""
+      "value": "myappid"
     },
     "MASTER_KEY": {
       "description": "A key that overrides all permissions. Keep this secret.",
-      "value": ""
+      "value": "mynewmasterkey"
     },
     "DATABASE_URI": {
       "description": "Connection string for your database.",
-      "value": "$SCALINGO_MONGO_URL"
+      "value": "$mongodb://dbparse:dbparse@ds011251.mlab.com:11251/dbparse"
     }
   },
   "addons": ["scalingo-mongodb"]
