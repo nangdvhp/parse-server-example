@@ -16,25 +16,17 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'myappid',
   masterKey: process.env.MASTER_KEY || 'mynewmasterkey', //Add your master key here. Keep it secret!
-  
-      push: {
-      android: {
-        senderId: '717084254965',
-        apiKey: 'AIzaSyBzCH-N5NhqG3equXwuEXnsJfNKqreyGsM'
-      }
-      // ,
-      // ios: {
-      //   pfx: '/file/path/to/XXX.p12',
-      //   bundleId: '',
-      //   production: false
-      // }
-    },
-  
-  
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
-  liveQuery: {
-    classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
+  // liveQuery: {
+  //   classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
+  // }
+  push: {
+    android: {
+      senderId: '717084254965', // The Sender ID of GCM
+      apiKey: 'AIzaSyBzCH-N5NhqG3equXwuEXnsJfNKqreyGsM' // The Server API Key of GCM
+    }
   }
+  
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
